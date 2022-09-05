@@ -5,21 +5,23 @@
   "author": "",
   "repository": "https://github.com/vector011/vector011.git",
   "homepage": "https://github.com/vector011/vector011#readme",
-  "main": "index.js",
+  "main": "functions/server.js",
   "license": "gpl-3.0",
   "private": true,
   "scripts": {
-    "start": "node server.js",
-    "docker": "pm2-docker server.js",
-    "serve": "pm2 start server.js --watch",
-    "stop": "pm2 stop server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server-local.js",
+    "build": "netlify-lambda build src"
   },
   "dependencies": {
     "dotenv": "^16.0.2",
-    "express": "^4.15.2",
-    "harp": "^0.33.0",
-    "mailgun-js": "^0.10.1",
+    "express": "^4.18.1",
+    "harp": "^0.42.0",
+    "mailgun-js": "^0.22.0",
     "pm2": "^2.4.6"
+  },
+  "devDependencies": {
+    "netlify-lambda": "^2.0.15",
+    "nodemon": "^2.0.19",
+    "serverless-http": "^3.0.2"
   }
 }

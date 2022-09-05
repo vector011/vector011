@@ -1,10 +1,14 @@
 const express = require('express')
-const harp = require('harp')
-const app = express()
-const mail = require('./mail')
+const serverless = require('serverless-http')
 require('dotenv').config()
 
+const app = express()
+const harp = require('harp')
+const mail = require('./mail')
+
 const port = process.env.PORT || 8080
+
+const router = express.Router()
 
 if (process.env.NODE_ENV === 'production') {
   app.set('trust proxy', true)
@@ -24,10 +28,10 @@ if (process.env.NODE_ENV === 'production') {
   })
 }
 
-app.use(express.static(__dirname + '/public'))
-app.use(harp.mount(__dirname + '/public'))
+router.use(express.static(__dirname + '/../public'))
+app.use(harp.mount(__dirname + '/../public'))
 
-app.get('/contact-form', function (req, res) {
+router.get('/contact-form', function (req, res) {
   let from = req.param('from')
   let text = req.param('text')
   mail.sendContactMails(from, text)
@@ -36,6 +40,9 @@ app.get('/contact-form', function (req, res) {
 
 app.use(harp.middleware.fallback)
 
-app.listen(port, function () {
+/*app.listen(port, function () {
   console.log('Example app listening on port: ' + port)
-})
+})*/
+
+module.exports = app
+module.exports.handler = serverless(app)
