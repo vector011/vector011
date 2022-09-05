@@ -15,8 +15,12 @@
   "dependencies": {
     "dotenv": "^16.0.2",
     "express": "^4.18.1",
+    "fs": "^0.0.1-security",
     "harp": "^0.42.0",
-    "mailgun-js": "^0.22.0"
+    "mailgun-js": "^0.22.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "terraform": "^1.21.2"
   },
   "devDependencies": {
     "netlify-lambda": "^2.0.15",
