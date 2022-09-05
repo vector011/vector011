@@ -6,8 +6,6 @@ const app = express()
 const harp = require('harp')
 const mail = require('./mail')
 
-const port = process.env.PORT || 8080
-
 const router = express.Router()
 
 if (process.env.NODE_ENV === 'production') {
@@ -39,10 +37,6 @@ router.get('/contact-form', function (req, res) {
 })
 
 app.use(harp.middleware.fallback)
-
-/*app.listen(port, function () {
-  console.log('Example app listening on port: ' + port)
-})*/
 
 module.exports = app
 module.exports.handler = serverless(app)

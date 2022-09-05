@@ -1,3 +1,8 @@
 const app = require('./src/server')
+require('dotenv').config()
 
-app.listen(8080, () => console.log('Local app listening on port 8080!'))
+const port = process.env.PORT || 8080
+
+app.listen(port, function () {
+  console.log('Example app listening on port: ' + port)
+})

@@ -27,11 +27,11 @@ vector011`,
     text: text,
   }
 
-  mailgun.messages().send(mailToUser, function (error, body) {
+  mailgun.messages().send(mailToUser, function (_, body) {
     console.log(body)
   })
 
-  mailgun.messages().send(mailToAdmin, function (error, body) {
+  mailgun.messages().send(mailToAdmin, function (_, body) {
     console.log(body)
   })
 }
