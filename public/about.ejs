@@ -1,0 +1,61 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <h1>WELCOME TO VECTOR011</h1>
+    <br />
+
+    <p>
+      OUR WORK IS ABOUT THE EXPLORING POSSIBILITIES OF YOUR BUSINESS POTENTIAL.
+    </p>
+    <p>WE TRY TO UNDERSTAND YOUR VISION AND WHY YOU WORK IN THE WAY YOU DO.</p>
+    <p>
+      WE HAVE THE CURIOSITY ABOUT YOUR BUSINESS THINGS WHICH DRIVE YOU AND
+      MOTIVATE YOU.
+    </p>
+    <br />
+
+    <p>...AND WE CREATE THE WEB SITES, IOS AND ANDROID APPS.</p>
+
+    <a href="projects-and-friends">see our work here</a>
+
+    <span class="blinking-caret">_</span>
+    <br />
+    <br />
+  </div>
+
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+    <img
+      class="img-fluid logo-animated"
+      src=""
+      style="width: 400px; max-width: 100%"
+    />
+    <br />
+    <br />
+  </div>
+</div>
+
+<script>
+  var img = new Image()
+  img.src = '/images/logo-animated-final.png'
+  var timer = null
+
+  var animatedImage = new Image()
+  var logo = document.querySelector('.logo-animated')
+
+  animatedImage.onload = function () {
+    logo.src = animatedImage.src
+    runAnimation()
+  }
+  animatedImage.src = '/images/logo-animated.gif'
+
+  var runAnimation = function () {
+    clearTimeout(timer)
+    timer = setTimeout(function () {
+      logo.src = img.src
+    }, 4000)
+  }
+
+  logo.onclick = function () {
+    logo.src = '/images/logo-animated.gif'
+    runAnimation()
+  }
+</script>

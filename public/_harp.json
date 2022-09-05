@@ -1,0 +1,178 @@
+{
+  "globals": {
+    "projects": [
+      {
+        "name": "SPOLOCNE BYVANIE PROJECT",
+        "link": "https://spolocnebyvanie.sk/",
+        "picture": "sb.jpg"
+      },
+      {
+        "name": "ALAX GAME STORE PRODUCT",
+        "link": "https://alax.io",
+        "picture": "alax.png"
+      },
+      {
+        "name": "DECENT PRODUCTS",
+        "link": "https://decent.ch",
+        "picture": "decent.png"
+      },
+      {
+        "name": "ÖCTAGON PROJECT",
+        "link": "http://www.octagon-exe.com",
+        "picture": "octagon.jpg"
+      },
+      {
+        "name": "ARCHSTYL. NETWORK",
+        "link": "http://archstyl.com",
+        "picture": "archstyl.png"
+      },
+      {
+        "name": "WOOW. NETWORK",
+        "link": "https://woowstudio.com",
+        "picture": "woow.png"
+      },
+      {
+        "name": "CRISPY APPS COLLABORATION",
+        "link": "https://www.crispy-apps.com",
+        "picture": "crispyApps.png"
+      },
+      {
+        "name": "K2PROJEKT",
+        "link": "https://k2projekt.sk",
+        "picture": "k2projekt.png"
+      },
+      {
+        "name": "LOTEO PRODUCT",
+        "link": "https://www.playloteo.com",
+        "picture": "loteo.png"
+      },
+      {
+        "name": "ODYZEO COLLABORATION",
+        "link": "https://www.odyzeo.com",
+        "picture": "odyzeo.png"
+      },
+      {
+        "name": "NINJA JAMM APP",
+        "link": "http://ninjajamm.com/",
+        "picture": "ninja.jpg"
+      },
+      {
+        "name": "PAVING SPACE PROJECT",
+        "link": "https://vimeo.com/194952553",
+        "picture": "ps.jpg"
+      },
+      {
+        "name": "GOOGLE CLOUD SEARCH APP",
+        "link": "https://bearsearch.app/",
+        "picture": "bearcloudsearch.png"
+      },
+      {
+        "name": "MISFIT APP",
+        "link": "https://misfit.com/products/misfit-app/",
+        "picture": "misfit.jpg"
+      },
+      {
+        "name": "PIPELINER CRM SYSTEM",
+        "link": "https://www.pipelinersales.com/",
+        "picture": "pipe.jpg"
+      },
+      {
+        "name": "SEEPER COLABORATION",
+        "link": "http://www.seeper.com/labs",
+        "picture": "seeper.jpg"
+      },
+      {
+        "name": "PODPILOVANIE WEB",
+        "link": "http://podpilovanie.sk/",
+        "picture": "podpilovanie.jpg"
+      },
+      {
+        "name": "FHI",
+        "link": "http://budajty.fhi.sk/",
+        "picture": "fhi.jpg"
+      }
+    ],
+    "partners": [
+      {
+        "link": "https://www.carhartt-wip.com/",
+        "picture": "carhartt.png"
+      },
+      {
+        "link": "http://www.studioecht.com/",
+        "picture": "echt.png"
+      },
+      {
+        "link": "http://www.staropramen.cz/",
+        "picture": "staropramen.png"
+      },
+      {
+        "link": "http://www.seeper.com/",
+        "picture": "seeper.png"
+      },
+      {
+        "link": "https://ninjatune.net/home",
+        "picture": "ninja.png"
+      },
+      {
+        "link": "http://www.odyzeo.com/",
+        "picture": "odyzeo.png"
+      },
+      {
+        "link": "https://www.toptal.com/",
+        "picture": "toptal.png"
+      },
+      {
+        "link": "https://www.google.sk",
+        "picture": "google.png"
+      },
+      {
+        "link": "http://www.ngparty.cz/",
+        "picture": "ng.png"
+      },
+      {
+        "link": "https://softip.sk/",
+        "picture": "softip.png"
+      },
+      {
+        "link": "https://www.pipelinersales.com/",
+        "picture": "pipe.png"
+      },
+      {
+        "link": "https://www.alza.cz",
+        "picture": "alza.png"
+      },
+      {
+        "link": "https://blind.com/",
+        "picture": "blind.png"
+      },
+      {
+        "link": "https://n26.com/",
+        "picture": "n26.png"
+      },
+      {
+        "link": "https://www.asus.com/",
+        "picture": "asus.png"
+      },
+      {
+        "link": "http://k2projekt.sk/",
+        "picture": "k2.png"
+      },
+      {
+        "link": "https://www.zse.sk/",
+        "picture": "zse.png"
+      },
+      {
+        "link": "http://www.aston.sk/",
+        "picture": "aston.png"
+      },
+      {
+        "link": "https://imiguru.sk/",
+        "picture": "imiguru.png"
+      },
+      {
+        "link": "https://soundcloud.com/",
+        "picture": "soundcloud.png"
+      }
+    ]
+  }
+}

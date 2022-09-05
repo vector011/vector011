@@ -1,0 +1,66 @@
+<h1 class="text--big">THE WEB AND MOBILE APPS.</h1>
+<br />
+<h1 class="text--big">THAT'S WHAT WE DO.</h1>
+
+<div
+  class="animated-element"
+  style="
+    position: fixed;
+    max-width: 100%;
+    max-height: 80%;
+    bottom: -30px;
+    right: -10%;
+  "
+>
+  <img class="img-fluid" src="images/home.png" width="1255" height="1116" />
+  <img
+    class="img-fluid hidden-sm-down animated-element__item--1"
+    src="images/home-1.png"
+    width="1255"
+    height="1116"
+  />
+  <img
+    class="img-fluid hidden-sm-down animated-element__item--2"
+    src="images/home-2.png"
+    width="1255"
+    height="1116"
+  />
+  <img
+    class="img-fluid hidden-sm-down animated-element__item--3"
+    src="images/home-3.png"
+    width="1255"
+    height="1116"
+  />
+  <img
+    class="img-fluid hidden-sm-down animated-element__item--4"
+    src="images/home-4.png"
+    width="1255"
+    height="1116"
+  />
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+  $(function () {
+    $(document).on('mousemove', function (e) {
+      let rotation = e.clientX / window.innerWidth
+      $('.animated-element').css('transform', 'rotateZ(' + rotation + 'deg)')
+      $('.animated-element__item--1').css(
+        'transform',
+        'translateX(' + rotation * 10 + 'px) rotateZ(' + rotation / -1 + 'deg)'
+      )
+      $('.animated-element__item--2').css(
+        'transform',
+        'translateX(' + rotation * 5 + 'px) rotateZ(' + rotation / -1 + 'deg)'
+      )
+      $('.animated-element__item--3').css(
+        'transform',
+        'translateY(' + rotation * -10 + 'px) rotateZ(' + rotation / -1 + 'deg)'
+      )
+      $('.animated-element__item--4').css(
+        'transform',
+        'translateY(' + rotation * -7 + 'px) rotateZ(' + rotation / -1 + 'deg)'
+      )
+    })
+  })
+</script>
