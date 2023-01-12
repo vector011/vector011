@@ -102,6 +102,13 @@ a {
     background-position: 100% 0;
   }
 
+  .updating-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
   @media (max-width: 1199px) {
     width: 130px;
     height: 130px;
